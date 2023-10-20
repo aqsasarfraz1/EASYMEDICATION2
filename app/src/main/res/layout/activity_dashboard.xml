@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- First Half (Colored) -->
+    <RelativeLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#258A95">
+        <EditText
+            android:id="@+id/formula"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="160dp"
+            android:hint="Enter formula"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:inputType="textAutoCorrect"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+        <EditText
+            android:id="@+id/medicine"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="250dp"
+            android:hint="Enter medicine name"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:inputType="textAutoCorrect"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+
+
+    <!-- Your content for the first half layout goes here -->
+    </RelativeLayout>
+
+
+    <!-- Second Half (Uncolored) -->
+    <RelativeLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/myButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#1976D2"
+            android:text="Compare price"
+            android:onClick="onButtonClick"
+            />
+
+        <!-- Your content for the second half layout goes here -->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

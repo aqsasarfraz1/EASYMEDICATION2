@@ -1,0 +1,127 @@
+<!-- res/layout/activity_signup.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    tools:context=".SignupActivity3"
+    android:background="@color/white"
+    android:textColor="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="83dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_2" />
+        <TextView
+            android:id="@+id/tag_accessibility_heading"
+            style="@style/CardView.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/App"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+        <!-- Other signup form fields can go here -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:hint="@string/prompt_username"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/black" /> <!-- Set text color to black -->
+
+    <EditText
+        android:id="@+id/emailEditText1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColor="@android:color/black" /> <!-- Set text color to black -->
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="@string/prompt_password"
+        android:inputType="numberPassword"
+        android:textColor="@android:color/black" /> <!-- Set text color to black -->
+
+
+    <Button
+
+        android:id="@+id/googleSignupButton"
+        android:layout_width="356dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#EFE9E9"
+        android:text="Signup with google"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/logoImageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/img_1" />
+
+    <TextView
+        android:id="@+id/loginInsteadTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:text="@string/action_sign_up"
+        android:textColor="#4396EA"
+        android:textSize="20sp"/>
+
+
+    <!-- Other views and layout elements -->
+
+    <TextView
+        android:id="@+id/SignupTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sigup1"
+        android:textColor="#4396EA"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+
+
+
+
+</LinearLayout>
+    <!-- res/layout/activity_signup.xml -->
+
+
